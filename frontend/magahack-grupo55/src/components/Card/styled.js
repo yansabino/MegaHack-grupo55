@@ -9,4 +9,5 @@ export const CardContent = styled.div`
     height: 400px;
     border: 1px solid black;
     margin: 10px 15px 0;
+    padding: 0 20px;    
 `

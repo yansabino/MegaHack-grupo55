@@ -2,7 +2,11 @@ import React from "react";
 import { StyledBody, CardContainer } from "./styled";
 import Card from "../Card/index"
 
-function Body() {
+function Body(props) {
+  const cardList = props.data.map((card) => {
+    return <Card picture={card.picture} description={card.description}/>
+  })
+
   return (
     <StyledBody>
       <h3>
@@ -10,9 +14,7 @@ function Body() {
         em um só lugar
       </h3>
       <CardContainer>
-        <Card/>
-        <Card/>
-        <Card/>
+        {cardList}
       </CardContainer>  
     </StyledBody>
   );

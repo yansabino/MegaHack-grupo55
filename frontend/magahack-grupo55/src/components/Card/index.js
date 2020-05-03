@@ -1,11 +1,11 @@
 import React from 'react';
 import { CardContent } from './styled'
 
-function Card(){
+function Card(props){
     return(
         <CardContent>
-            <div>oi</div>
-            <h2>Texto do CardContent</h2>
+            <div>{props.picture}</div>
+            <h3>{props.description}</h3>
         </CardContent>
     )
 }
