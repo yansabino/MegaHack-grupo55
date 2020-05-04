@@ -3,7 +3,7 @@ import { StyledBody, CardContainer } from "./styled";
 import Card from "../Card/index"
 
 function Body(props) {
-  console.log(props)
+  
   const cardList = props.cards.map((card) => {
     return <Card picture={card.picture} description={card.description}/>
   })

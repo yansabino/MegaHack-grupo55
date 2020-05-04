@@ -6,16 +6,18 @@ import {
   StyledText,
 } from "./styled";
 
-function Header() {
+function Header(props) {
+  console.log(props.menu)
+  const menuList = props.menu.map((menuItem) => {
+  return <StyledText onClick={menuItem.command}>{menuItem.label}</StyledText>
+  })
   return (
     <StyledHeader>
       <TitleContainer>
         <h2>i.EDU</h2>
       </TitleContainer>
       <ButtonContainer>
-        <StyledText>HOME</StyledText>
-        <StyledText>QUEM SOMOS</StyledText>
-        <StyledText>POR ONDE COMEÇAR</StyledText>
+        {menuList}
       </ButtonContainer>
     </StyledHeader>
   );

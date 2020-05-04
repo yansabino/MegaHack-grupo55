@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardContent, StyledImg } from './styled'
+import { CardContent } from './styled'
 
 
 function Card(props){

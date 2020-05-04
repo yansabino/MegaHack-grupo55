@@ -2,6 +2,8 @@ import React from 'react';
 import Header from "./components/header/index"
 import Body from "./components/body/index"
 import { Container } from "./components/App/styled"
+import {withRouter} from 'react-router-dom';
+
 
 
 const cardMock = [
@@ -22,13 +24,28 @@ const cardMock = [
 }
 ]
 
-function App() {
+function App(props) {
+  console.log(props)
+  const menuMock = [
+    {
+      label: "HOME",
+      command: () => props.history.push("/")
+    },
+    {
+      label: "QUEM SOMOS",
+      command: () => props.history.push("/about")
+    },
+    {
+      label: "POR ONDE COMEÇAR",
+      command: () => props.history.push("/")
+    },
+  ]
   return (
     <Container>
-        <Header/>
+        <Header menu={menuMock}/>
         <Body cards={cardMock}/>
     </Container>
   );
 }
 
-export default App;
+export default withRouter(App);
