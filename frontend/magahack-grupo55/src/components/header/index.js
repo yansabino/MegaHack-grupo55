@@ -10,14 +10,12 @@ function Header() {
   return (
     <StyledHeader>
       <TitleContainer>
-        <h2>Nome do Trem</h2>
+        <h2>i.EDU</h2>
       </TitleContainer>
       <ButtonContainer>
-        <StyledText>Home</StyledText>
-        <StyledText>Quem somos</StyledText>
-        <StyledText>Objetivos</StyledText>
-        <StyledText>Mídias Sociais</StyledText>
-        <StyledText>Contato</StyledText>
+        <StyledText>HOME</StyledText>
+        <StyledText>QUEM SOMOS</StyledText>
+        <StyledText>POR ONDE COMEÇAR</StyledText>
       </ButtonContainer>
     </StyledHeader>
   );

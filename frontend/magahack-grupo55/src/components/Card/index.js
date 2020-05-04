@@ -1,10 +1,11 @@
 import React from 'react';
-import { CardContent } from './styled'
+import { CardContent, StyledImg } from './styled'
+
 
 function Card(props){
     return(
         <CardContent>
-            <div>{props.picture}</div>
+            <img src={props.picture} alt="oi" width="150"/>
             <h3>{props.description}</h3>
         </CardContent>
     )

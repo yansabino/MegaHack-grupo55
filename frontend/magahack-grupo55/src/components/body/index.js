@@ -3,15 +3,15 @@ import { StyledBody, CardContainer } from "./styled";
 import Card from "../Card/index"
 
 function Body(props) {
-  const cardList = props.data.map((card) => {
+  console.log(props)
+  const cardList = props.cards.map((card) => {
     return <Card picture={card.picture} description={card.description}/>
   })
 
   return (
     <StyledBody>
       <h3>
-        Informações essenciais para o crescimento da sua empresa ONLINE reunidas
-        em um só lugar
+        FAÇA SUA EMPRESA CRESCER COM A INTERNET
       </h3>
       <CardContainer>
         {cardList}

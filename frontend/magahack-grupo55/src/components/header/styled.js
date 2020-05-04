@@ -27,7 +27,7 @@ export const ButtonContainer = styled.div`
 export const StyledText = styled.div`
     margin: 0 15px;
     height: 100%;
-    width: 100px;
+    width: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
