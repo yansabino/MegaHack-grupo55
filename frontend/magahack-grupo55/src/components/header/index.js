@@ -22,7 +22,7 @@ function Header(props) {
     },
     {
       label: "CONTATO",
-      command: () => props.history.push("/contato"),
+      command: () => props.history.push("/contact"),
     },
   ];
 
